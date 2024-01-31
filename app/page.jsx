@@ -33,7 +33,7 @@ export default function Home() {
     };
 
     return (
-        <div className="absolute w-full top-0 left-0 bottom-0 right-0 h-full bg-black/45">
+        <div className="absolute sm:p-2 w-full top-0 left-0 bottom-0 right-0 h-full bg-black/45">
             <div>
                 <Image
                     src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
