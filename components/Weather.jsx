@@ -14,7 +14,7 @@ const Weather_fun = ({data}) => {
                   />
                   <p className="text-2xl"> {data.weather[0].main}</p>
               </div>
-              <p className="text-9xl sm:text-9xl "> {(data.main.temp - 273.15).toFixed(1)}°</p>
+              <p className="text-9xl "> {(data.main.temp - 273.15).toFixed(1)}°</p>
           </div>
           <div className="bg-black/40 relative p-8 rounded-md text-gray-400">
               <p className="font-bold text-2xl text-center pb-6">Weather in {data.name}</p>
