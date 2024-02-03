@@ -33,7 +33,7 @@ export default function Home() {
     };
 
     return (
-        <div className="absolute max-w-full top-0 left-0 bottom-0 right-0 h-full overflow-hidden bg-black/45">
+        <div className="absolute max-w-full top-0 left-0 bottom-0 right-0 h-full overflow-clip bg-black/45">
             <div>
                 <Image
                     src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -43,7 +43,7 @@ export default function Home() {
                     style={{ zIndex: -1 }}
                 />
 
-                <div className=" items-center  max-w-[500px] w-full m-auto pt-4 text-white">
+                <div className="  max-w-[500px] w-full m-auto pt-4 text-white">
                     <form
                         id="new"
                         name="fr"
@@ -51,8 +51,8 @@ export default function Home() {
                             e.preventDefault();
                             Submitchange();
                         }}
-                        className=" flex justify-between items-center w-full m-auto p-3 bg-transparent  border border-gray-600 text-white rounded-2xl ">
-                        <div>
+                        className="  w-full  p-3 bg-transparent  border border-gray-600 text-white rounded-2xl ">
+                        <div className="flex justify-between items-center">
                             <input
                                 type="text"
                                 placeholder="Search city"
@@ -60,12 +60,13 @@ export default function Home() {
                                 onChange={(e) => {
                                     setcity(e.target.value), console.log("sdf");
                                 }}
-                                className="bg-transparent border-none text-white focus:outline-none text-2xl placeholder:text-gray-400"
+                                className="bg-transparent border-none text-white focus:outline-none text-2xl min-w-[100px] placeholder:text-gray-400"
                             />
+
+                            <button type="submit">
+                                <BsSearch size={25} />
+                            </button>
                         </div>
-                        <button type="submit" className="">
-                            <BsSearch size={25} />
-                        </button>
                     </form>
                 </div>
             </div>
