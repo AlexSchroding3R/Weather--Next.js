@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'sm':'400px'
+        'sm':'600px'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
